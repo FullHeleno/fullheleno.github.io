@@ -1,5 +1,5 @@
 $(window).load(function(){
-    var mapUrl = "http://www.google.com.br/maps/place/Igreja+de+Nossa+Senhora+da+Candel%C3%A1ria+-+Pra%C3%A7a+Pio+X,+s%2Fn+-+Centro,+Rio+de+Janeiro+-+RJ,+20040-020,+Brasil/@-22.900883,-43.177842,17z/data=!4m2!3m1!1s0x997f593442ed21:0x7631334f454dc51b",
+    var mapUrl = "https://www.google.com/maps/d/embed?mid=zMMno9_5ccYQ.kQk8Zze7Rn-U",
         onLoadWebSite = true,
         googleMapHolder = $(".google_map"),
         backgroundColor = googleMapHolder.css("backgroundColor"),

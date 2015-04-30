@@ -11,7 +11,7 @@
 					successCl:'success',
 					successShow:'4000',
 					mailHandlerURL:'bin/MailHandler.php',
-					ownerEmail:'support@guardlex.com',
+					ownerEmail:'fulvioheleno@gmail.com',
 					stripHTML:true,
 					smtpMailServer:'localhost',
 					targets:'input,textarea',

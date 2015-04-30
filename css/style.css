@@ -15,7 +15,7 @@ body {background:url(../images/bg.jpg) center bottom #000 no-repeat;border:0;fon
 /* ============================= main layout ====================== */
 a {color:#7db3ea;text-decoration:none;outline:none}
 a:hover {}
-strong {color:#81b003}
+strong {color:#7db3ea}
 h1 {float:left}
 h2 {font-size:40px;color:#4d4d4d;line-height:1.2em;padding:7px 0 18px 0;letter-spacing:-1px}
 h2.letter_spacing {letter-spacing:-2px}
@@ -64,7 +64,7 @@ figure {padding-top:3px}
 .table {padding-top:3px}
 table {border-collapse:collapse;border:0}
 table td {background:#f2f2f2;border-bottom:1px solid #fff;border-right:1px solid #fff;padding-top:2px;padding-bottom:2px;vertical-align:middle;min-height:25px}
-.google_map {padding-top:0;margin-top:3px;margin-bottom:22px;width:220px;height:180px;background:#fff}
+.google_map {padding-top:0;margin-top:3px;margin-bottom:22px;width:220px;height:220px;background:#fff}
 /* ============================= columns ====================== */
 .col1, .col2, .col3, .col4 {float:left}
 .col1 {width:540px}
