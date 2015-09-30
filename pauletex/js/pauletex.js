@@ -5,12 +5,10 @@
 //Os fonemas estão em ordem de prioridade
 
 FONEMAS = {
-    'gu' : 'gu',
     'ca' : 'ca',
     'ge ' : 'x😛💦ge',
     'gi' : 'x😛💦gi',
     'ce' : 'x😛💦e',
-    'g' : 'x😛💦',
     'j' : 'x😛💦',
     's' : 'x😛💦',
     'z' : 'x😛💦',
