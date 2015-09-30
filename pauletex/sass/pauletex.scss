@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+$breakpoint: 700px;
+
+header{
+  margin: auto;
+  width: 90%;
+  text-align: center;
+  h1{
+    @media(max-width: $breakpoint){
+      font-size: 1.2em;
+    }
+  }
+}
+.img-dinofauro{
+  height: 10em;
+  border-radius: 50%;
+}
+
+footer{
+  margin: auto;
+  width: 90%;
+  text-align: center;
+}
+
+.textos{
+  margin: auto;
+  width: 90%;
+  textarea{
+    width: 100%;
+    @media(min-width: $breakpoint){
+      height: 15em;
+    }@media(max-width: $breakpoint){
+      height: 10em;
+    }
+  }
+  .texto{
+    width: 100%;
+    padding: 2px;
+    @media(min-width: $breakpoint){
+      display: inline-block;
+      max-width: 45%;
+    }
+  }
+  .botao{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
