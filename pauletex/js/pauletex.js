@@ -3,22 +3,6 @@
  * Exe algoritxmo pega palavra por palavra e xubxtitui ox fonemax do array FONEMAS por X.
  */
 //Os fonemas estão em ordem de prioridade
-/**FONEMAS = {
-    'xce' : 'fe',
-    'xci' : 'fi',
-    'ch' : 'f',
-    'ss' : 'f',
-    'ce' : 'fe',
-    'ci' : 'fi',
-    've' : 'fe',
-    'ge ' : 'fe',
-    'gi' : 'fi',
-    's' : 'f',
-    'v': 'f',
-    'z' : 'f',
-    'j' : 'f',
-    'ç'  : 'f'
-};*/
 
 FONEMAS = {
     'gu' : 'gu',
