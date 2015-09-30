@@ -38,13 +38,13 @@ var isLowerCase = function(s){
 
 /**
  * @param palavra
- * @returns palafra
+ * @returns palavra
  */
 traduzPalavra = function(palavra){
     var palavra = palavra;
     for (var fonema in FONEMAS) {
         if (FONEMAS.hasOwnProperty(fonema)) {
-            palavra = palafra.replace(new RegExp(fonema, 'gi'),function(match){
+            palavra = palavra.replace(new RegExp(fonema, 'gi'),function(match){
                 var replaceString = "";
                 var replaxe = FONEMAS[match.toLowerCase()];
                 var lastLowerCase = true;
