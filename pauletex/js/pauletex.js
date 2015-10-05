@@ -6,12 +6,13 @@
 
 FONEMAS = {
     'ca' : 'ca',
-    'ge ' : 'x😛💦ge',
-    'gi' : 'x😛💦gi',
-    'ce' : 'x😛💦e',
-    'j' : 'x😛💦',
-    's' : 'x😛💦',
-    'z' : 'x😛💦',
+    'ge ' : 'x😜💦ge',
+    'gi' : 'x😜💦gi',
+    'ce' : 'x😜💦e',
+    'j' : 'x😜💦',
+    's' : 'x😜💦',
+    'z' : 'x😜💦',
+    'ch' : 'x😜💦'
 };
 
 var isLowerCase = function(s){
