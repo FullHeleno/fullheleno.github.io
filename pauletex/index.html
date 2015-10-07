@@ -10,16 +10,9 @@
         <title>Traduza seus textos para o pauletex</title>
         <link rel="stylesheet" href="sass/pauletex.css"/>
         <link rel="stylesheet" href="sass/combo.css"/>
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        
-          ga('create', 'UA-61413700-2', 'auto');
-          ga('send', 'pageview');
-        
-        </script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script src="js/pauletex.js"></script>
+        <script src="js/traduxao.js"></script>
     </head>
     <body>
         <header>
@@ -30,19 +23,33 @@
             <div class="texto">
                 <label for="texto-pt">Texto em português</label>
                 <br>
-                <textarea id="texto-pt" placeholder="Digite/cole o texto aqui."></textarea>
+                    <textarea id="say-text" placeholder="Digite/cole o texto aqui."></textarea>
             </div>
             <div class="texto">
                 <label for="texto-din">Texto em pauletex</label>
                 <br>
-                <textarea id="texto-din" placeholder="O texto xerá traduxido aqui."></textarea>
+                <textarea id="texto-pt" placeholder="O texto xerá traduxido aqui."></textarea>
             </div>
             <button class="botao" id="btt-traduzir">Traduzir/Traduxir</button>
+            <form id="say-form">
+                <button id="say-button">Xpeak</button>
+            </form>
+<script>
+    var audioTagSupport = !!(document.createElement('audio').canPlayType);
+        $('#say-form').submit(function(){
+            if (!audioTagSupport) return false;
+            var text = $.trim($('#say-text').val());
+            if (text == '') return false;
+            var audio = document.createElement('audio');
+            audio.setAttribute('src', 'http://translate.google.com/translate_tts?tl=goo&q=' + encodeURIComponent(text));
+            audio.load();
+            audio.play();
+            return false;
+        });
+</script>
         </section>
-        <footer>
-            <span>Tradutor de Português/Pauletex. Este projeto é <em><a href="" title="repositório">open xourxe</a></em></span>
-        </footer>
-        <script src="js/pauletex.js"></script>
-        <script src="js/traduxao.js"></script>
+            <footer>
+                <span>Tradutor de Português/Pauletex. Este projeto é <em><a href="" title="repositório">open xourxe</a></em></span>
+            </footer>
     </body>
 </html>
