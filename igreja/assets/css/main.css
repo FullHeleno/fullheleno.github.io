@@ -83,7 +83,7 @@
 		background: -o-linear-gradient(#fff, #999);*/
 	}
 
-	.close {
+	.closeModal {
 		background: #606061;
 		color: #ffffff;
 		line-height: 25px;
@@ -102,7 +102,7 @@
 		box-shadow: 1px 1px 3px #000;
 	}
 
-	.close:hover { background: #ed4933; }
+	.closeModal:hover { background: #ed4933; }
 
 /* Box Model */
 
