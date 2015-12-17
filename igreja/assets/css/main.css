@@ -2697,7 +2697,7 @@
 		}
 
 		.wrapper.style1 {
-			background-color: #21b2a6;
+			background-color: rgba(22, 22, 22, 0.8);
 			color: #c7ebe8;
 		}
 
@@ -3184,6 +3184,7 @@
 
 		.wrapper.style6 {
 			background-color: #333;
+			padding: 2em 0 4em 0 ;
 		}
 
 /* Page Wrapper + Menu */
