@@ -1978,15 +1978,15 @@
 			}
 
 		.icon.style1 {
-			color: #00ffcc;
+			color: #2AB577;
 		}
 
 		.icon.style2 {
-			color: #00f0ff;
+			color: #62BFAF;
 		}
 
 		.icon.style3 {
-			color: #76ddff;
+			color: #62BFAF;
 		}
 
 /* Image */
@@ -2484,7 +2484,7 @@
 
 			.features li:before {
 				display: block;
-				color: #00ffcc;
+				color: rgba(161, 0, 33, 0.96);
 				position: absolute;
 				left: 1.75em;
 				top: 2.75em;
@@ -2625,7 +2625,7 @@
 		@media screen and (max-width: 1280px) {
 
 			.spotlight .image {
-				width: 45%;
+				/*width: 45%; */
 			}
 
 			.spotlight .content {
@@ -3221,7 +3221,7 @@
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: #0060a3;
+		background: #2E3842;
 		color: #ffffff;
 		height: 100%;
 		max-width: 80%;
@@ -3873,3 +3873,97 @@
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+ul#countdown {
+  list-style: none;
+  margin: 50px 0;
+  padding: 0;
+  display: block;
+  text-align: center;
+}
+
+ul#countdown li { display: inline-block; }
+
+ul#countdown li span {
+  font-size: 20px;
+  font-weight: 30;
+  line-height: 80px;
+}
+
+ul#countdown li.seperator {
+  font-size: 20px;
+  line-height: 80px;
+  vertical-align: top;
+  font-weight: bold;
+}
+
+ul#countdown li p {
+  color: #a7abb1;
+  font-size: 5px;
+}
+
+.clock {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  -o-transform-origin: center center;
+  transition: all 1s; 
+}
+.clock.css {  
+  -webkit-animation-delay:1s;
+  -moz-animation-delay:1s;
+  -ms-animation-delay:1s;
+  -o-animation-delay:1s;
+  animation-dely:1s;
+}
+.clock.animated {
+  -webkit-animation: 1600ms pulsate infinite alternate ease-in-out;
+  -moz-animation: 1600ms pulsate infinite alternate ease-in-out;
+  -ms-animation: 1600ms pulsate infinite alternate ease-in-out;
+  -o-animation: 1600ms pulsate infinite alternate ease-in-out;
+  animation: 1600ms pulsate infinite alternate ease-in-out;
+}
+.clock:after {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+     -moz-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+       -o-transform-origin: 100% 100%;
+          transform-origin :100% 100%;
+}
+
+@keyframes pulsate {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+@-webkit-keyframes pulsate {
+  0% { -webkit-transform: scale(1); }
+  50% { -webkit-transform: scale(1.1); }
+  100% { -webkit-transform: scale(1); }
+}
+@-moz-keyframes pulsate {
+  0% { -moz-transform: scale(1); }
+  50% { -moz-transform: scale(1.1); }
+  100% { -moz-transform: scale(1); }  
+}
+@-ms-keyframes pulsate {
+  0% { -ms-transform: scale(1); }
+  50% { -ms-transform: scale(1.1); }
+  100% { -ms-transform: scale(1); }  
+}
+@-o-keyframes pulsate {
+  0% { -o-transform: scale(1); }
+  50% { -o-transform: scale(1.1); }
+  100% { -o-transform: scale(1); }  
+}

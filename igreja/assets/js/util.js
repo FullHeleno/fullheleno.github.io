@@ -584,4 +584,36 @@
 
 	};
 
+	var clock = document.getElementsByClassName('clock')[1],
+	    pfx = ["webkit", "moz", "MS", "o", ""],
+	    hovered = false;
+
+	function AnimationListener() {
+	    if(hovered)
+	    { 
+	      clock.classList.remove('animated'); 
+	      clock.style.webkitTransform = 'scale(2)';
+	      clock.style.MozTransform = 'scale(2)';
+	      clock.style.msTransform = 'scale(2)';
+	      clock.style.OTransform = 'scale(2)';
+	      clock.style.transform = 'scale(2)';
+	    }
+	}
+
+	function TransitionListener() {
+	  if(!hovered)
+	  {
+	    clock.classList.add('animated');
+	  }
+	}
+
+	function PrefixedEvent(element, type, callback) {
+	    for (var p = 0; p < pfx.length; p++) {
+	        if (!pfx[p]) type = type.toLowerCase();
+	        element.addEventListener(pfx[p]+type, callback, false);
+	    }
+	}
+
+	PrefixedEvent(clock, "AnimationIteration", AnimationListener);
+
 })(jQuery);
