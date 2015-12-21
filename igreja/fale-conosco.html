@@ -27,8 +27,9 @@
 											<li><a href="institucional.html">Institucional</a></li>
 											<li><a href="#">Agenda</a></li>
 											<li><a href="#">Multimidia</a></li>
-											<li><a href="biblia-online.html">Bíblia On-Line</a></li>
+											<li><a href="biblia-online.html">Bíblia Online</a></li>
 											<li><a href="#">Doações</a></li>
+											<li><a href="oracao-online.html">Oração Online</a></li>
 											<li><a href="fale-conosco.html">Fale Conosco</a></li>
 										</ul>
 									</div>
@@ -40,16 +41,49 @@
 				<!-- Main -->
 					<article id="main">
 						<header>
-							<h2>Fale-Conosco</h2>
-							<p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p>
+							<h2>Fale Conosco</h2>
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
 
-								<h3>Lorem ipsum dolor</h3>
-								<p>Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. Curabitur purus leo, tempus sed finibus eget, fringilla quis risus. Maecenas et lorem quis sem varius sagittis et a est. Maecenas iaculis iaculis sem. Donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo. Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla tincidunt. Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien.</p>
-
-								<p>Vestibulum ultrices risus velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam. Proin nec dui cursus, posuere dui eget interdum. Fusce lectus magna, sagittis at facilisis vitae, pellentesque at etiam. Quisque posuere leo quis sem commodo, vel scelerisque nisi scelerisque. Suspendisse id quam vel tortor tincidunt suscipit. Nullam auctor orci eu dolor consectetur, interdum ullamcorper ante tincidunt. Mauris felis nec felis elementum varius.</p>
+							<section>
+								<h3>Contato</h3>
+								<form method="post" action="form-to-email.php">
+									<div class="row uniform 50%">
+										<div class="6u 12u$(xsmall)">
+											<input type="text" name="name" id="name" value="" placeholder="Nome" />
+										</div>
+										<div class="6u$ 12u$(xsmall)">
+											<input type="email" name="email" id="email" value="" placeholder="Email" />
+										</div>
+										<div class="4u 12u$(medium)">
+											<input type="radio" id="priority-low" name="priority">
+											<label for="priority-low">Dúvida</label>
+										</div>
+										<div class="4u 12u$(medium)">
+											<input type="radio" id="priority-normal" name="priority">
+											<label for="priority-normal">Pedido</label>
+										</div>
+										<div class="4u$ 12u$(medium)">
+											<input type="radio" id="priority-high" name="priority" checked>
+											<label for="priority-high">Fale com o Pastor</label>
+										</div>
+										<div class="6u 12u$(medium)">
+											<input type="checkbox" id="copy" name="copy">
+											<label for="copy">Envie uma cópia para meu email</label>
+										</div>
+										<div class="12u$">
+											<textarea name="message" id="message" placeholder="Escreva sua mensagem" rows="6"></textarea>
+										</div>
+										<div class="12u$">
+											<ul class="actions">
+												<li><input type="submit" name="submit" value="Enviar Mensagem" class="special" /></li>
+												<li><input type="reset" value="Limpar" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
 
 								<hr />
 
